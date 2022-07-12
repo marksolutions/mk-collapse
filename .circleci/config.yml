@@ -30,13 +30,13 @@ workflows:
   release:
     jobs:
       - release-snapshot:
-          context: Mark
+          context: Dreamworld
           filters:
             branches:
               only:
                 - /^feature\/.+$/
       - release:
-          context: Mark
+          context: Dreamworld
           filters:
               branches:
                 only:
